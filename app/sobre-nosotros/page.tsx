@@ -117,7 +117,9 @@ export default function SobreNosotros() {
 
         <div className="text-center">
           <a
-            href="/"
+            href="https://www.amazon.es/stores/Ediciones-Elemental-Kids-Club/author/B0G24P67WS?language=en&ref=ap_rdr&shoppingPortalEnabled=true"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block bg-[#E85D75] hover:bg-[#d54a63] text-white px-8 py-4 rounded-full font-bold text-lg transition-all shadow-[0_5px_0_0_#b94456] hover:shadow-[0_3px_0_0_#b94456] hover:translate-y-[2px] uppercase"
           >
             Explorar los Libros
