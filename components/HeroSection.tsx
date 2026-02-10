@@ -29,7 +29,9 @@ export default function HeroSection() {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="#libros"
+                href="https://www.amazon.es/stores/Ediciones-Elemental-Kids-Club/author/B0G24P67WS?language=en&ref=ap_rdr&shoppingPortalEnabled=true"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-[#E85D75] hover:bg-[#d54a63] text-white font-bold py-4 px-8 rounded-full text-lg transition-all text-center shadow-[0_5px_0_0_#b94456] hover:shadow-[0_3px_0_0_#b94456] hover:translate-y-[2px] uppercase"
               >
                 EXPLORA NUESTROS LIBROS →
