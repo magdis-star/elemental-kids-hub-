@@ -7,7 +7,7 @@ export default function FreeDownloadSection() {
       <div className="absolute top-1/2 right-1/4 w-20 h-20 bg-white/10 rounded-full"></div>
 
       <div className="max-w-4xl mx-auto text-center relative z-10">
-        <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bangers mb-6 leading-tight">
+        <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bangers mb-6 leading-tight md:whitespace-nowrap">
           ¡HAZTE CON EL CUADERNO ANTES DE QUE SE AGOTEN!
         </h2>
         <p className="text-lg md:text-2xl mb-10 font-light">
