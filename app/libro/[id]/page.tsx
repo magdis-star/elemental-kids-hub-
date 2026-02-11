@@ -241,40 +241,40 @@ export default function BookPage() {
             </h2>
 
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-[#A8E6A1] rounded-xl p-6 border-4 border-[#1F2937]">
+              <div className="bg-[#A8E6A1] rounded-xl p-4 md:p-6 border-4 border-[#1F2937]">
                 <div className="text-2xl mb-2">✓</div>
-                <h3 className="font-bold text-lg mb-2">Variedad increíble</h3>
-                <p className="text-slate-700">Más de {book.id === 1 ? '80' : '100'} actividades diferentes. Nunca se aburren porque cada página es una nueva aventura.</p>
+                <h3 className="font-bold text-base md:text-lg mb-2 break-words">Variedad increíble</h3>
+                <p className="text-slate-700 text-sm break-words">Más de {book.id === 1 ? '80' : '100'} actividades diferentes. Nunca se aburren porque cada página es una nueva aventura.</p>
               </div>
 
-              <div className="bg-[#7DD3FC] rounded-xl p-6 border-4 border-[#1F2937]">
+              <div className="bg-[#7DD3FC] rounded-xl p-4 md:p-6 border-4 border-[#1F2937]">
                 <div className="text-2xl mb-2">✓</div>
-                <h3 className="font-bold text-lg mb-2">Niveles progresivos</h3>
-                <p className="text-slate-700">Las actividades aumentan gradualmente de dificultad. Perfecto para mantener el reto sin frustración.</p>
+                <h3 className="font-bold text-base md:text-lg mb-2 break-words">Niveles progresivos</h3>
+                <p className="text-slate-700 text-sm break-words">Las actividades aumentan gradualmente de dificultad. Perfecto para mantener el reto sin frustración.</p>
               </div>
 
-              <div className="bg-[#FCD34D] rounded-xl p-6 border-4 border-[#1F2937]">
+              <div className="bg-[#FCD34D] rounded-xl p-4 md:p-6 border-4 border-[#1F2937]">
                 <div className="text-2xl mb-2">✓</div>
-                <h3 className="font-bold text-lg mb-2">{book.id === 1 ? 'Pensamiento crítico' : 'Regalo descargable secreto'}</h3>
-                <p className="text-slate-700">{book.id === 1 ? 'Desarrolla habilidades lógicas y matemáticas de forma divertida y efectiva.' : 'Incluye acceso a contenido extra descargable para seguir la diversión en casa.'}</p>
+                <h3 className="font-bold text-base md:text-lg mb-2 break-words">{book.id === 1 ? 'Pensamiento crítico' : 'Regalo descargable secreto'}</h3>
+                <p className="text-slate-700 text-sm break-words">{book.id === 1 ? 'Desarrolla habilidades lógicas y matemáticas de forma divertida y efectiva.' : 'Incluye acceso a contenido extra descargable para seguir la diversión en casa.'}</p>
               </div>
 
-              <div className="bg-[#FF6B7A] rounded-xl p-6 border-4 border-[#1F2937]">
+              <div className="bg-[#FF6B7A] rounded-xl p-4 md:p-6 border-4 border-[#1F2937]">
                 <div className="text-2xl mb-2">✓</div>
-                <h3 className="font-bold text-lg mb-2">Diseñado por una ingeniera</h3>
-                <p className="text-slate-700">Creado con fundamento pedagógico por una ingeniera apasionada por la educación.</p>
+                <h3 className="font-bold text-base md:text-lg mb-2 break-words">Diseñado por una ingeniera</h3>
+                <p className="text-slate-700 text-sm break-words">Creado con fundamento pedagógico por una ingeniera apasionada por la educación.</p>
               </div>
 
-              <div className="bg-[#A8E6A1] rounded-xl p-6 border-4 border-[#1F2937]">
+              <div className="bg-[#A8E6A1] rounded-xl p-4 md:p-6 border-4 border-[#1F2937]">
                 <div className="text-2xl mb-2">✓</div>
-                <h3 className="font-bold text-lg mb-2">Calidad premium</h3>
-                <p className="text-slate-700">Papel de alta calidad, ilustraciones nítidas y encuadernación resistente.</p>
+                <h3 className="font-bold text-base md:text-lg mb-2 break-words">Calidad premium</h3>
+                <p className="text-slate-700 text-sm break-words">Papel de alta calidad, ilustraciones nítidas y encuadernación resistente.</p>
               </div>
 
-              <div className="bg-[#7DD3FC] rounded-xl p-6 border-4 border-[#1F2937]">
+              <div className="bg-[#7DD3FC] rounded-xl p-4 md:p-6 border-4 border-[#1F2937]">
                 <div className="text-2xl mb-2">✓</div>
-                <h3 className="font-bold text-lg mb-2">Sin pantallas</h3>
-                <p className="text-slate-700">Diversión garantizada lejos de tablets y móviles. Perfecto para desarrollar concentración.</p>
+                <h3 className="font-bold text-base md:text-lg mb-2 break-words">Sin pantallas</h3>
+                <p className="text-slate-700 text-sm break-words">Diversión garantizada lejos de tablets y móviles. Perfecto para desarrollar concentración.</p>
               </div>
             </div>
 
