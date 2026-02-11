@@ -91,7 +91,7 @@ const booksData: BookData[] = [
       'Lanzamiento en 2026',
       'Regístrate para recibir notificaciones'
     ],
-    ageRange: 'Por anunciar',
+    ageRange: '4 - 7 años',
     pages: 0,
     amazonLink: '#',
     status: 'coming-soon',
