@@ -1,0 +1,20 @@
+/*
+Theme Name: Elemental Kids Club
+Theme URI: https://elementalkidsclub.com
+Author: Elemental Kids Club
+Author URI: https://elementalkidsclub.com
+Description: Custom theme for Elemental Kids Club - Educational activity books for children
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 6.4
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: elemental-kids
+Tags: education, books, kids, children, activities
+
+Elemental Kids Club WordPress Theme
+*/
+
+/* Global Styles - Import Tailwind compiled CSS */
+@import url('./assets/css/main.css');

@@ -21,24 +21,24 @@ export default function BonusSection() {
 
           {/* Right Side - Content */}
           <div className="order-1 md:order-2">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bangers mb-4 md:mb-6 leading-tight italic text-center md:text-left">
+            <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bangers mb-4 md:mb-6 leading-tight italic text-center md:text-left">
               <span className="block text-[#1F2937]">PORQUE LA MEJOR PANTALLA...</span>
               <span className="block text-[#5BC0EB]">ES SU IMAGINACIÓN.</span>
             </h2>
 
-            <p className="text-sm sm:text-base md:text-lg text-slate-800 mb-6 leading-relaxed text-center md:text-left">
+            <p className="text-base sm:text-lg md:text-lg text-slate-800 mb-6 leading-relaxed text-center md:text-left">
               Los cuadernos incluyen retos como <span className="font-bold">"Siete Diferencias"</span>, <span className="font-bold">"Operación Incógnita"</span> y <span className="font-bold">"Busca y Encuentra"</span> que garantizan que el cerebro de tu hijo trabaje a máxima potencia.
             </p>
 
             {/* Bonus Box */}
             <div className="bg-white border-4 border-[#FDB44B] rounded-xl p-4 sm:p-6 shadow-lg">
               <div className="mb-3">
-                <h3 className="text-lg sm:text-xl md:text-2xl font-bangers text-[#E85D75] italic text-center md:text-left">
+                <h3 className="text-xl sm:text-2xl md:text-2xl font-bangers text-[#E85D75] italic text-center md:text-left">
                   ¡BONUS EXCLUSIVO!
                 </h3>
               </div>
 
-              <p className="text-slate-900 mb-4 leading-relaxed text-xs sm:text-sm md:text-base text-center md:text-left">
+              <p className="text-slate-900 mb-4 leading-relaxed text-sm sm:text-base md:text-base text-center md:text-left">
                 ¿Ya compraste el libro? <span className="font-bold">Descarga tu contenido extra GRATIS.</span> Haz clic en el botón para recibir actividades adicionales directamente en tu bandeja de entrada.
               </p>
 
