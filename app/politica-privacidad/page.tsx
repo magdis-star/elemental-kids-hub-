@@ -76,14 +76,45 @@ export default function PoliticaPrivacidad() {
             Los comentarios de los visitantes puede que los revise un servicio de detección automática de spam.
           </p>
 
-          <h2 className="text-2xl md:text-3xl font-bangers text-[#5BC0EB] mb-3 mt-8">¿Tienes preguntas sobre tu privacidad?</h2>
-          <p className="mb-4 leading-relaxed">
-            Si tienes alguna pregunta sobre cómo manejamos tus datos, contáctanos en:{' '}
-            <a href="mailto:hola@elementalkidsclub.com" className="text-[#5BC0EB] hover:underline">
-              hola@elementalkidsclub.com
-            </a>
-          </p>
           </div>
+        </div>
+
+        {/* Contact Section - Styled Box */}
+        <div className="bg-[#E0F2FE] rounded-3xl shadow-lg p-8 md:p-12 border-4 border-[#5BC0EB] mt-8">
+          <div className="flex flex-col md:flex-row items-start gap-6">
+            {/* Email Icon */}
+            <div className="flex-shrink-0">
+              <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-[#5BC0EB]">
+                <path d="M3 8L10.89 13.26C11.2187 13.4793 11.6049 13.5963 12 13.5963C12.3951 13.5963 12.7813 13.4793 13.11 13.26L21 8M5 19H19C19.5304 19 20.0391 18.7893 20.4142 18.4142C20.7893 18.0391 21 17.5304 21 17V7C21 6.46957 20.7893 5.96086 20.4142 5.58579C20.0391 5.21071 19.5304 5 19 5H5C4.46957 5 3.96086 5.21071 3.58579 5.58579C3.21071 5.96086 3 6.46957 3 7V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </div>
+
+            {/* Content */}
+            <div className="flex-1">
+              <h2 className="text-2xl md:text-3xl font-bangers text-[#5BC0EB] mb-3">
+                ¿Tienes preguntas sobre tu privacidad?
+              </h2>
+              <p className="text-slate-700 mb-3 leading-relaxed">
+                Si tienes alguna pregunta sobre cómo manejamos tus datos, contáctanos en:
+              </p>
+              <a
+                href="mailto:hola@elementalkidsclub.com"
+                className="text-[#E85D75] hover:text-[#d54a63] font-semibold text-lg hover:underline transition-colors"
+              >
+                hola@elementalkidsclub.com
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Back Link */}
+        <div className="mt-8 text-center">
+          <a
+            href="/"
+            className="inline-flex items-center text-[#5BC0EB] hover:text-[#4a9bc9] font-semibold text-lg transition-colors hover:underline"
+          >
+            ← Volver
+          </a>
         </div>
       </div>
     </div>
