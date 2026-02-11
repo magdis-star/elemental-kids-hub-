@@ -16,7 +16,7 @@ export default function AboutSection() {
               <span className="font-bold text-[#F97316]">Diseñado por una ingeniera apasionada por la educación</span>, cada libro está cuidadosamente creado para estimular la creatividad, desarrollar el pensamiento lógico y fomentar la curiosidad natural de los niños.
             </p>
             <p className="text-lg text-slate-700 mb-8 leading-relaxed">
-              Perfectos para <span className="font-semibold">viajes largos</span>, tardes en <span className="font-semibold">restaurantes</span>, o simplemente momentos de tranquilidad en casa. ✈️🍽️🏠
+              Perfectos para <span className="font-semibold">viajes largos</span>, tardes en <span className="font-semibold">restaurantes</span>, o simplemente momentos de tranquilidad en casa.
             </p>
 
             {/* Features List */}

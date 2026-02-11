@@ -24,7 +24,7 @@ export default function Home() {
       id: 2,
       title: 'Cuaderno de Actividades Divertidas, Nuevos desafíos',
       element: 'agua',
-      description: 'Más de 100 actividades para viajes largos, restaurantes y momentos de tranquilidad. Sopas de letras, sudokus, laberintos y mucho más. ✈️🍽️',
+      description: 'Más de 100 actividades para viajes largos, restaurantes y momentos de tranquilidad. Sopas de letras, sudokus, laberintos y mucho más.',
       volume: 'LIBRO 2',
       status: 'new' as const,
       buttonText: 'Ver Detalles →',
