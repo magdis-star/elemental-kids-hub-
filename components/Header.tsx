@@ -19,6 +19,7 @@ export default function Header() {
             height={30}
             priority
             className="h-auto w-auto"
+            style={{ mixBlendMode: 'multiply' }}
           />
         </Link>
 
