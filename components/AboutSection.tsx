@@ -67,18 +67,18 @@ export default function AboutSection() {
               Actividades que despiertan la imaginación y el amor por aprender
             </p>
 
-            <div className="grid grid-cols-3 gap-4 text-center">
-              <div className="bg-white rounded-xl p-4">
-                <div className="text-3xl font-bold text-[#F97316]">100+</div>
-                <div className="text-sm text-slate-600">Actividades por libro</div>
+            <div className="grid grid-cols-3 gap-2 sm:gap-4 text-center">
+              <div className="bg-white rounded-xl p-2 sm:p-4">
+                <div className="text-2xl sm:text-3xl font-bold text-[#F97316]">100+</div>
+                <div className="text-xs sm:text-sm text-slate-600 break-words">Actividades por libro</div>
               </div>
-              <div className="bg-white rounded-xl p-4">
-                <div className="text-3xl font-bold text-[#F97316]">10+</div>
-                <div className="text-sm text-slate-600">Tipos de ejercicios</div>
+              <div className="bg-white rounded-xl p-2 sm:p-4">
+                <div className="text-2xl sm:text-3xl font-bold text-[#F97316]">10+</div>
+                <div className="text-xs sm:text-sm text-slate-600 break-words">Tipos de ejercicios</div>
               </div>
-              <div className="bg-white rounded-xl p-4">
-                <div className="text-3xl font-bold text-[#F97316]">0</div>
-                <div className="text-sm text-slate-600">Pantallas necesarias</div>
+              <div className="bg-white rounded-xl p-2 sm:p-4">
+                <div className="text-2xl sm:text-3xl font-bold text-[#F97316]">0</div>
+                <div className="text-xs sm:text-sm text-slate-600 break-words">Pantallas necesarias</div>
               </div>
             </div>
           </div>

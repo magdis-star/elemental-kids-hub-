@@ -3,6 +3,42 @@ import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
 import FreeDownloadSection from '@/components/FreeDownloadSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
+import StructuredData from '@/components/StructuredData';
+import { organizationSchema, generateProductSchema } from '@/lib/seo';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Elemental Kids Club - Libros de Actividades Educativas para Niños',
+  description: 'Libros de actividades educativas para niños de 5 a 12 años. Más de 100 actividades sin pantallas: sudokus, laberintos, sopas de letras y mucho más. ¡Aprendizaje divertido garantizado!',
+  keywords: ['libros actividades niños', 'cuadernos educativos infantiles', 'aprendizaje sin pantallas', 'actividades niños 5-12 años', 'sudokus para niños', 'laberintos infantiles', 'sopas de letras niños'],
+  authors: [{ name: 'Ediciones Elemental Kids Club' }],
+  openGraph: {
+    title: 'Elemental Kids Club - Libros de Actividades Educativas',
+    description: 'Más de 100 actividades educativas sin pantallas para niños de 5 a 12 años. Sudokus, laberintos, sopas de letras y mucho más.',
+    url: 'https://elementalkidsclub.com',
+    siteName: 'Elemental Kids Club',
+    images: [
+      {
+        url: '/logo.png',
+        width: 1200,
+        height: 630,
+        alt: 'Elemental Kids Club',
+      }
+    ],
+    locale: 'es_ES',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Elemental Kids Club - Libros de Actividades Educativas',
+    description: 'Más de 100 actividades educativas sin pantallas para niños de 5 a 12 años.',
+    images: ['/logo.png'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  }
+};
 
 export default function Home() {
   const books = [
@@ -49,8 +85,18 @@ export default function Home() {
     }
   ];
 
+  const productSchemas = books
+    .filter(book => book.status === 'available' || book.status === 'new')
+    .map(book => generateProductSchema(book));
+
   return (
     <div className="min-h-screen">
+      {/* Structured Data for SEO */}
+      <StructuredData data={organizationSchema} />
+      {productSchemas.map((schema, index) => (
+        <StructuredData key={index} data={schema} />
+      ))}
+
       {/* Hero Section - "Aprendizaje Divertido Lejos de las Pantallas" */}
       <HeroSection />
 

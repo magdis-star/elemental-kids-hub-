@@ -32,6 +32,13 @@ export default function Header() {
             <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#5BC0EB] group-hover:w-full transition-all duration-300"></span>
           </Link>
           <Link
+            href="/bonuses"
+            className="text-[#1F2937] hover:text-[#5BC0EB] transition-colors font-medium relative group"
+          >
+            Bonuses
+            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#5BC0EB] group-hover:w-full transition-all duration-300"></span>
+          </Link>
+          <Link
             href="/sobre-nosotros"
             className="text-[#1F2937] hover:text-[#5BC0EB] transition-colors font-medium relative group"
           >
@@ -79,6 +86,13 @@ export default function Header() {
               className="text-[#1F2937] hover:text-[#5BC0EB] transition-colors font-medium py-2"
             >
               Libros
+            </Link>
+            <Link
+              href="/bonuses"
+              onClick={() => setMobileMenuOpen(false)}
+              className="text-[#1F2937] hover:text-[#5BC0EB] transition-colors font-medium py-2"
+            >
+              Bonuses
             </Link>
             <Link
               href="/sobre-nosotros"

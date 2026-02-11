@@ -1,6 +1,39 @@
 import Image from 'next/image';
+import StructuredData from '@/components/StructuredData';
+import { generateBreadcrumbSchema, organizationSchema } from '@/lib/seo';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Sobre Nosotros - Elemental Kids Club',
+  description: 'Conoce la misión de Elemental Kids Club. Libros de actividades educativas diseñados por una ingeniera apasionada por la educación, sin pantallas para niños de 5 a 12 años.',
+  keywords: ['sobre elemental kids club', 'quiénes somos', 'libros educativos infantiles', 'ingeniera educación niños'],
+  openGraph: {
+    title: 'Sobre Nosotros - Elemental Kids Club',
+    description: 'Libros de actividades educativas diseñados por una ingeniera apasionada por la educación.',
+    url: 'https://elementalkidsclub.com/sobre-nosotros',
+    siteName: 'Elemental Kids Club',
+    images: [
+      {
+        url: '/personajes.png',
+        width: 1200,
+        height: 630,
+        alt: 'Personajes Elemental Kids Club',
+      }
+    ],
+    locale: 'es_ES',
+    type: 'website',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  }
+};
 
 export default function SobreNosotros() {
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: 'Inicio', url: '/' },
+    { name: 'Sobre Nosotros', url: '/sobre-nosotros' }
+  ]);
   return (
     <div className="min-h-screen py-16 px-5" style={{
       backgroundColor: '#FEF3C7',
@@ -10,6 +43,10 @@ export default function SobreNosotros() {
       `,
       backgroundSize: '20px 20px'
     }}>
+      {/* Structured Data for SEO */}
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={organizationSchema} />
+
       <div className="max-w-4xl mx-auto">
         <h1 className="text-5xl md:text-6xl font-bangers text-[#5BC0EB] mb-6 text-center">
           SOBRE ELEMENTAL KIDS CLUB

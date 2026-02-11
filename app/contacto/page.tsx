@@ -1,8 +1,14 @@
 'use client';
 
 import { useState } from 'react';
+import StructuredData from '@/components/StructuredData';
+import { generateBreadcrumbSchema } from '@/lib/seo';
 
 export default function Contacto() {
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: 'Inicio', url: '/' },
+    { name: 'Contacto', url: '/contacto' }
+  ]);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -45,6 +51,9 @@ export default function Contacto() {
       `,
       backgroundSize: '20px 20px'
     }}>
+      {/* Structured Data for SEO */}
+      <StructuredData data={breadcrumbSchema} />
+
       <div className="max-w-5xl mx-auto">
         <h1 className="text-4xl md:text-6xl font-bangers text-center mb-4 text-[#FF6B7A]">
           ¡CONTÁCTANOS!
