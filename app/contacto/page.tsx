@@ -53,7 +53,7 @@ export default function Contacto() {
           ¿Tienes preguntas sobre nuestros libros? Estamos aquí para ayudarte
         </p>
 
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
+        <div className="grid md:grid-cols-2 gap-8 mb-12 items-start">
           {/* Contact Info */}
           <div className="bg-white rounded-3xl shadow-lg p-6 border-4 border-[#5BC0EB]">
             <h2 className="text-2xl md:text-3xl font-bangers text-[#5BC0EB] mb-4">INFORMACIÓN</h2>

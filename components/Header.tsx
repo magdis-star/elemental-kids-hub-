@@ -8,7 +8,7 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-gradient-to-r from-white to-[#E5F6FC]/30 border-b-2 border-[#FDB44B] sticky top-0 z-40 shadow-sm">
+    <header className="bg-white border-b-2 border-[#FDB44B] sticky top-0 z-40 shadow-sm">
       <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center hover:opacity-90 transition-opacity">
@@ -19,7 +19,6 @@ export default function Header() {
             height={30}
             priority
             className="h-auto w-auto"
-            style={{ mixBlendMode: 'multiply' }}
           />
         </Link>
 
