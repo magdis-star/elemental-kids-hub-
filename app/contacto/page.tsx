@@ -55,37 +55,37 @@ export default function Contacto() {
 
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           {/* Contact Info */}
-          <div className="bg-white rounded-3xl shadow-lg p-8 border-4 border-[#5BC0EB]">
-            <h2 className="text-2xl md:text-3xl font-bangers text-[#5BC0EB] mb-6">INFORMACIÓN</h2>
+          <div className="bg-white rounded-3xl shadow-lg p-6 border-4 border-[#5BC0EB]">
+            <h2 className="text-2xl md:text-3xl font-bangers text-[#5BC0EB] mb-4">INFORMACIÓN</h2>
 
-            <div className="space-y-8">
-              <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-16 h-16 rounded-full bg-[#FF6B7A] flex items-center justify-center">
-                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div className="space-y-5">
+              <div className="flex items-start gap-3">
+                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#FF6B7A] flex items-center justify-center">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z" fill="white"/>
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-bold text-slate-800 mb-2 text-lg">Email</h3>
-                  <a href="mailto:info@elementalkids.com" className="text-[#5BC0EB] hover:underline break-all text-lg">
+                  <h3 className="font-bold text-slate-800 mb-1 text-base">Email</h3>
+                  <a href="mailto:info@elementalkids.com" className="text-[#5BC0EB] hover:underline break-all text-base">
                     info@elementalkids.com
                   </a>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-16 h-16 rounded-full bg-[#FDB44B] flex items-center justify-center">
-                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <div className="flex items-start gap-3">
+                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#FDB44B] flex items-center justify-center">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M7 18C5.9 18 5.01 18.9 5.01 20C5.01 21.1 5.9 22 7 22C8.1 22 9 21.1 9 20C9 18.9 8.1 18 7 18ZM1 2V4H3L6.6 11.59L5.25 14.04C5.09 14.32 5 14.65 5 15C5 16.1 5.9 17 7 17H19V15H7.42C7.28 15 7.17 14.89 7.17 14.75L7.2 14.63L8.1 13H15.55C16.3 13 16.96 12.59 17.3 11.97L20.88 5.48C20.96 5.34 21 5.17 21 5C21 4.45 20.55 4 20 4H5.21L4.27 2H1ZM17 18C15.9 18 15.01 18.9 15.01 20C15.01 21.1 15.9 22 17 22C18.1 22 19 21.1 19 20C19 18.9 18.1 18 17 18Z" fill="white"/>
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-bold text-slate-800 mb-2 text-lg">Comprar Libros</h3>
+                  <h3 className="font-bold text-slate-800 mb-1 text-base">Comprar Libros</h3>
                   <a
                     href="https://www.amazon.es/stores/Ediciones-Elemental-Kids-Club/author/B0G24P67WS?language=en&ref=ap_rdr&shoppingPortalEnabled=true"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#5BC0EB] hover:underline text-lg"
+                    className="text-[#5BC0EB] hover:underline text-base"
                   >
                     Ver en Amazon →
                   </a>
