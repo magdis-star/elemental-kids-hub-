@@ -131,6 +131,41 @@ get_header();
 </div>
 <a class="block text-center py-3 px-7 rounded-full font-bold transition-all bg-[#E85D75] hover:bg-[#d54a63] text-white shadow-[0_4px_0_0_#b94456] hover:shadow-[0_2px_0_0_#b94456] hover:translate-y-[2px] uppercase" href="/libro-2/">Ver Detalles →</a>
 </div>
+<?php
+// Los libros creados desde «Libros» en el panel, después de los volúmenes 1 y 2
+$libros = elemental_kids_get_books();
+$colores = array('#FCD34D', '#A8E6A1', '#7DD3FC', '#FF6B7A');
+while ($libros->have_posts()) : $libros->the_post();
+    $libro_badge = get_post_meta(get_the_ID(), '_book_badge', true);
+    $libro_volume = get_post_meta(get_the_ID(), '_book_volume', true);
+    $libro_color = $colores[$libros->current_post % count($colores)];
+?>
+<div class="rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between min-h-[500px] bg-white border-8" style="border-color:<?php echo esc_attr($libro_color); ?>">
+<div>
+<?php if ($libro_badge) : ?>
+<div class="flex justify-center mb-4">
+<span class="bg-[#FF6B7A] text-white text-sm md:text-base font-bold px-5 py-2 rounded-full shadow-lg uppercase tracking-wide"><?php echo esc_html($libro_badge); ?></span>
+</div>
+<?php endif; ?>
+<?php if (has_post_thumbnail()) : ?>
+<div class="flex justify-center mb-6">
+<div class="relative w-56 h-72 rounded-lg overflow-hidden shadow-lg">
+<?php the_post_thumbnail('large', array('class' => 'object-cover', 'loading' => 'lazy', 'alt' => get_the_title(), 'style' => 'position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent')); ?>
+</div>
+</div>
+<?php endif; ?>
+<?php if ($libro_volume) : ?>
+<h3 class="text-3xl md:text-4xl font-bangers text-[#1F2937] mb-3 text-center"><?php echo esc_html($libro_volume); ?></h3>
+<?php endif; ?>
+<h4 class="text-lg font-bold text-slate-800 mb-4 text-center"><?php the_title(); ?></h4>
+<?php if (has_excerpt()) : ?>
+<p class="text-slate-700 mb-6 text-sm leading-relaxed"><?php echo esc_html(get_the_excerpt()); ?></p>
+<?php endif; ?>
+</div>
+<a class="block text-center py-3 px-7 rounded-full font-bold transition-all bg-[#E85D75] hover:bg-[#d54a63] text-white shadow-[0_4px_0_0_#b94456] hover:shadow-[0_2px_0_0_#b94456] hover:translate-y-[2px] uppercase" href="<?php the_permalink(); ?>">Ver Detalles →</a>
+</div>
+<?php endwhile; wp_reset_postdata(); ?>
+<?php if ($libros->post_count === 0) : // «Próximamente» sólo mientras no haya ningún libro nuevo ?>
 <div class="rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between min-h-[500px] bg-white border-8" style="border-color:#FCD34D">
 <div>
 <div class="flex justify-center mb-6">
@@ -157,6 +192,7 @@ get_header();
 </div>
 <a class="block text-center py-3 px-7 rounded-full font-bold transition-all bg-[#E85D75] hover:bg-[#d54a63] text-white shadow-[0_4px_0_0_#b94456] hover:shadow-[0_2px_0_0_#b94456] hover:translate-y-[2px] uppercase" href="/libro-3/">Ver Detalles →</a>
 </div>
+<?php endif; ?>
 </div>
 </div>
 </section>
